@@ -35,6 +35,8 @@ Example: values_greater_than_second([5,2,3,2,1,4]) should print 3 and return [5,
 Example: values_greater_than_second([3]) should return False"""
 
 def values_greater_than_second(input):
+    if len(input)<2:
+        return False
     newList = []
     max = input[1] 
     sum = 0
@@ -45,7 +47,7 @@ def values_greater_than_second(input):
     print(sum)
     return newList
 
-test =[5,2,3,2,1,4]
+test =[5]
 new = values_greater_than_second(test)
 print(new)
 
